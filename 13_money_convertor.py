@@ -1,6 +1,27 @@
 from sys import flags
 
 
+menu = """
+    Welcome to the coin convertor 😎
+
+1 - Colombian Peso
+2 - Argetian Peso
+3 - Mexican Peos    
+
+Elige una opción: """
+
+opcion = input(menu)
+
+if opcion == '1':
+    pass
+elif opcion == '2':
+    pass
+elif opcion == '3':
+    pass
+else:
+    print("Insert a valid option, please.")
+
+
 pesos_colombianos = input('Número de pesos colombianos: ')
 pesos_mexicanos = input ('Número de pesos mexicanos: ')
 
