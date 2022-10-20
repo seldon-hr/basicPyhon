@@ -26,13 +26,16 @@
 #     print('Choose other option')
 
 
-from unittest import result
 
 
-def sum(a, b):
-    print('Sum of two numbers')
-    result = a + b;
-    return result
+#Retun in function
+# from unittest import result
 
-sumatoria = sum(1, 3)
-print (sumatoria)
+
+# def sum(a, b):
+#     print('Sum of two numbers')
+#     result = a + b;
+#     return result
+
+# sumatoria = sum(1, 3)
+# print (sumatoria)

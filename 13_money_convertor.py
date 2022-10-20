@@ -1,5 +1,13 @@
 from sys import flags
 
+def conversor(tipo_pesos, valor_dolar):
+    pesos = input('Número de pesos ' + tipo_pesos + ': ')
+    pesos = float(pesos)
+    dolares = pesos / valor_dolar
+    dolares = round(dolares, 2) #round make to round the number of decimals, and next specifi the number of digits we would like to have after the point.
+    dolares = str(dolares)
+    print('Tienes $' + dolares + ' dólares')
+
 
 menu = """
     Welcome to the coin convertor 😎
@@ -13,31 +21,13 @@ Elige una opción: """
 opcion = input(menu)
 
 if opcion == '1':
-    pesos = input('Número de pesos colombianos: ')
-    pesos = float(pesos)
-    valor_dolar = 3875
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2) #round make to round the number of decimals, and next specifi the number of digits we would like to have after the point.
-    dolares = str(dolares)
-    print('Tienes $' + dolares + ' dólares')
+    conversor('colombianos', 3875)
 
 elif opcion == '2':
-    pesos = input('Número de pesos argentinos: ')
-    pesos = float(pesos)
-    valor_dolar = 65
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2) #round make to round the number of decimals, and next specifi the number of digits we would like to have after the point.
-    dolares = str(dolares)
-    print('Tienes $' + dolares + ' dólares')
+    conversor('argentinos', 65)
 
 elif opcion == '3':
-    pesos = input('Número de pesos mexicanos: ')
-    pesos = float(pesos)
-    valor_dolar = 20
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2) #round make to round the number of decimals, and next specifi the number of digits we would like to have after the point.
-    dolares = str(dolares)
-    print('Tienes $' + dolares + ' dólares')
+    conversor('colombianos', 20)
 
 else:
     print("Insert a valid option, please.")
